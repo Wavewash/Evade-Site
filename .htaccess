@@ -1,0 +1,5 @@
+Options +FollowSymLinks 
+RewriteEngine on
+RewriteCond %{SCRIPT_FILENAME} !\.(gif|jpg|png|swf|xml|php)$
+#RewriteCond %{SCRIPT_FILENAME} \(addscore|ishighscore|highscore|getscore).php^$
+RewriteRule (.*) view/index.php [QSA,L]
